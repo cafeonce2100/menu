@@ -95,7 +95,7 @@
         .combo-row {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 12px;
             margin-bottom: 20px;
             flex-wrap: wrap;
         }
@@ -103,18 +103,35 @@
             background: linear-gradient(135deg, #f8f6f2 0%, #fff 100%);
             border: 2px solid #e8a54b;
             border-radius: 10px;
-            padding: 15px 25px;
+            padding: 12px 15px;
             text-align: center;
+            flex: 1;
+            min-width: 140px;
+            max-width: 160px;
         }
         .combo-name {
             font-family: 'Playfair Display', serif;
             font-size: 16px;
             color: #4a3728;
+            font-weight: 600;
         }
         .combo-price {
             font-size: 20px;
             font-weight: 700;
             color: #e8a54b;
+            margin: 5px 0;
+        }
+        .combo-includes {
+            font-size: 10px;
+            color: #666;
+            line-height: 1.4;
+            margin-top: 8px;
+            text-align: left;
+            border-top: 1px dashed #e5e5e5;
+            padding-top: 8px;
+        }
+        .combo-includes strong {
+            color: #4a3728;
         }
         
         /* Special Box */
@@ -270,14 +287,23 @@
                     <div class="combo">
                         <div class="combo-name">Combo 1</div>
                         <div class="combo-price">$9.35</div>
+                        <div class="combo-includes">
+                            <strong>Includes:</strong> White or Whole Wheat Toast (panini bread) + 2 eggs any style, butter, shredded cheese, cherry tomato + Latte or Hot Chocolate or Americano (8oz)
+                        </div>
                     </div>
                     <div class="combo">
                         <div class="combo-name">Combo 2</div>
                         <div class="combo-price">$9.75</div>
+                        <div class="combo-includes">
+                            <strong>Includes:</strong> Ham and Cheese Croissant + Latte or Hot Chocolate or Americano (8oz)
+                        </div>
                     </div>
                     <div class="combo">
                         <div class="combo-name">Combo 3</div>
                         <div class="combo-price">$10.25</div>
+                        <div class="combo-includes">
+                            <strong>Includes:</strong> Sandwich Selection (petit baguette bread) + Mamey/Mango/Guava Milkshake or Fresh Orange Juice or any Drink in the display Freezer
+                        </div>
                     </div>
                 </div>
             </div>
